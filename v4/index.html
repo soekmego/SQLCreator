@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SQLCreator by Tayfun Oezhoroz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="lib/jquery/jquery-3.6.0.js"></script>
+    <script src="js/sqlcreator/Factory.js"></script>
+    <script src="js/sqlcreator/FormatString.js"></script>
+    <script src="js/sqlcreator/RandomName.js"></script>
+    <script src="js/sqlcreator/RandomGeoData.js"></script>
+    <script src="js/sqlcreator/RandomNumber.js"></script>
+    <script src="js/sqlcreator/SQLCreator.js"></script>
+    <script src="js/ControllerSQLCreator.js"></script>
+    <script src="js/Main.js"></script>
+
+</head>
+
+<body>
+
+    <div id="main" class="center ">
+        <div id="header" class="center ">
+            <div>SQLCreator - Random Data</div>
+        </div>
+
+        <div id="formContainer">
+            <!-- Table-->
+            <div id="table">
+                <span class="tabelleUeberschrift">Table Name:</span><input id="tableName" type="text" value="HTLGANZEINFACH_DATA">
+                <span class="tabelleUeberschrift"># Rows:</span><input id="numberOfRecords" type="text" value="10">
+                <br>
+                <br>
+
+                <table class="tabelleUeberschrift ">
+                    <tr>
+                        <th class="">Field Name:</th>
+                        <th class="">Field Type:</th>
+                    </tr>
+                </table>
+
+                <!--
+                <form id="column1">
+                    <input name="columnName" type="text" value="PersID">
+                    <select name='columnType' name="options" >
+                        <option value="AutoIncrementId">Auto Increment ID</option>
+                        <option value="Id">RandomId</option>
+                        <option value="HumanName"  >HumanName</option>
+                        <option value="Number" selected>Number</option>
+                        <option value="BrandName">BrandName</option>
+                        <option value="CompanyName">CompanyName</option>
+                        <option value="Address">Address</option>
+                        <option value="CityName">CityName</option>
+                        <option value="Email">Email</option>
+                    </select>
+                </form>
+
+
+                <form id="column2">
+                    <input name="columnName" type="text" value="Phone">
+                    <select name='columnType' name="options" >
+                        <option value="AutoIncrementId">Auto Increment ID</option>
+                        <option value="Id">RandomId</option>
+                        <option value="HumanName"  >HumanName</option>
+                        <option value="Number">Number</option>
+                        <option value="BrandName" >BrandName</option>
+                        <option value="CompanyName">CompanyName</option>
+                        <option value="Address">Address</option>
+                        <option value="CityName">CityName</option>
+                        <option value="Email">Email</option>
+                        <option value="PhoneNumber" selected >PhoneNumber</option>
+                    </select>
+                    <br>
+                </form>
+                -->
+
+            </div>
+
+            <button id="addBtn">ADD ANOTHER FIELD</button>
+            <button id="createBtn">CREATE</button>
+        </div>
+
+
+        <div id="result" class="center border"></div>  
+        <div id="footer" class="center">
+            <div>created by Tayfun Özhoroz - <a href="https://www.htlganzeinfach.at/">htlganzeinfach.at</a></div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+

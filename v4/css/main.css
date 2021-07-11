@@ -1,0 +1,128 @@
+body {
+    background-color: #161616;
+    color: #d6d6d6;
+    font-size: 1vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a:link, a:visited {
+    color: rgb(0, 140, 255);
+    text-decoration: none;
+}
+
+.border {
+    border: solid 1px red;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+
+#header {
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    width: 100%;
+}
+
+#header div {
+    width: auto;
+    border: solid 0px rgb(0, 68, 255);
+    font-size: 2vw;
+}
+
+
+#main {
+    width: 80%;
+}
+
+.tabelleUeberschrift {
+    font-weight: normal;
+    text-align: left;
+    font-size: 1vw;
+}
+
+.tabelleUeberschrift th{
+    width: 255px;
+    font-weight: normal;
+    text-align: left;
+    font-size: 1vw;
+}
+
+#main input, select{
+    margin: 5px 5px 5px 0px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1vw;
+}
+
+#main button{
+    margin: 5px 5px 5px 0px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1vw;
+}
+
+#table > form > div {
+    display: inline-block;
+    width: auto;
+}
+
+
+#result {
+    width: 100%;
+    font-size: 1vw;
+    font-family: 'Courier New', monospace;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+#footer {
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    width: 100%;
+}
+
+#footer div {
+    width: auto;
+    border: solid 0px red;
+}
+
+#addBtn {
+    background-color: greenyellow;
+}
+
+#createBtn {
+    background-color: orange;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    #header div {
+        font-size: 5vw;
+    }
+
+    #main {
+        width: 100%;
+    }
+    
+    #result {
+        font-size: 3vw;
+    }
+
+    #footer div {
+        font-size: 4vw;
+    }
+}
